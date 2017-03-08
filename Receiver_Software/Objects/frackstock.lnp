@@ -1,0 +1,13 @@
+--cpu Cortex-M0
+".\objects\main.o"
+".\objects\led.o"
+".\objects\sc.o"
+".\objects\usart.o"
+".\objects\rfm.o"
+".\objects\animation.o"
+"C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.4.0\CMSIS\Lib\ARM\arm_cortexM0l_math.lib"
+".\objects\startup_stm32f031.o"
+".\objects\system_stm32f0xx.o"
+--ro-base 0x08000000 --entry 0x08000000 --rw-base 0x20000000 --entry Reset_Handler --first __Vectors --strict --summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Listings\frackstock.map" -o .\Objects\frackstock.axf

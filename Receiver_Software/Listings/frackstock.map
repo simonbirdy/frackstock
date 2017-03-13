@@ -46,7 +46,7 @@ Section Cross References
     animation.o(i.blinkCycle) refers to animation.o(.bss) for .bss
     animation.o(i.blinkTrigger) refers to animation.o(.data) for .data
     animation.o(i.blinkTrigger) refers to animation.o(.bss) for .bss
-    animation.o(i.constColorCycle) refers to aeabi_sdivfast.o(.text) for __aeabi_uidivmod
+    animation.o(i.constColorCycle) refers to aeabi_sdivfast.o(.text) for __aeabi_idivmod
     animation.o(i.constColorCycle) refers to animation.o(.data) for .data
     animation.o(i.constColorCycle) refers to animation.o(.bss) for .bss
     animation.o(i.constColorTrigger) refers to animation.o(.data) for .data
@@ -353,22 +353,22 @@ Image Symbol Table
     i.blinkTrigger                           0x08000750   Section        0  animation.o(i.blinkTrigger)
     blinkTrigger                             0x08000751   Thumb Code    78  animation.o(i.blinkTrigger)
     i.constColorCycle                        0x080007ac   Section        0  animation.o(i.constColorCycle)
-    constColorCycle                          0x080007ad   Thumb Code   308  animation.o(i.constColorCycle)
-    i.constColorTrigger                      0x080008e8   Section        0  animation.o(i.constColorTrigger)
-    constColorTrigger                        0x080008e9   Thumb Code    18  animation.o(i.constColorTrigger)
-    i.led_cycle                              0x08000904   Section        0  led.o(i.led_cycle)
-    i.led_initialize                         0x080009bc   Section        0  led.o(i.led_initialize)
-    i.led_setLEDBuffer                       0x08000a38   Section        0  led.o(i.led_setLEDBuffer)
-    i.main                                   0x08000a44   Section        0  main.o(i.main)
-    i.rfm_initialize                         0x08000aa8   Section        0  rfm.o(i.rfm_initialize)
-    i.rfm_writeByte                          0x08000b2c   Section        0  rfm.o(i.rfm_writeByte)
-    rfm_writeByte                            0x08000b2d   Thumb Code   118  rfm.o(i.rfm_writeByte)
-    i.sc_initialize                          0x08000ba8   Section        0  sc.o(i.sc_initialize)
-    i.sc_waitForCycle                        0x08000bd0   Section        0  sc.o(i.sc_waitForCycle)
-    i.usart_checkNewCommand                  0x08000bfc   Section        0  usart.o(i.usart_checkNewCommand)
-    i.usart_cycle                            0x08000d18   Section        0  usart.o(i.usart_cycle)
-    i.usart_initialize                       0x08000d38   Section        0  usart.o(i.usart_initialize)
-    i.usart_waiting                          0x08000de4   Section        0  usart.o(i.usart_waiting)
+    constColorCycle                          0x080007ad   Thumb Code   414  animation.o(i.constColorCycle)
+    i.constColorTrigger                      0x08000954   Section        0  animation.o(i.constColorTrigger)
+    constColorTrigger                        0x08000955   Thumb Code    18  animation.o(i.constColorTrigger)
+    i.led_cycle                              0x08000970   Section        0  led.o(i.led_cycle)
+    i.led_initialize                         0x08000a28   Section        0  led.o(i.led_initialize)
+    i.led_setLEDBuffer                       0x08000aa4   Section        0  led.o(i.led_setLEDBuffer)
+    i.main                                   0x08000ab0   Section        0  main.o(i.main)
+    i.rfm_initialize                         0x08000b14   Section        0  rfm.o(i.rfm_initialize)
+    i.rfm_writeByte                          0x08000b98   Section        0  rfm.o(i.rfm_writeByte)
+    rfm_writeByte                            0x08000b99   Thumb Code   118  rfm.o(i.rfm_writeByte)
+    i.sc_initialize                          0x08000c14   Section        0  sc.o(i.sc_initialize)
+    i.sc_waitForCycle                        0x08000c3c   Section        0  sc.o(i.sc_waitForCycle)
+    i.usart_checkNewCommand                  0x08000c68   Section        0  usart.o(i.usart_checkNewCommand)
+    i.usart_cycle                            0x08000d84   Section        0  usart.o(i.usart_cycle)
+    i.usart_initialize                       0x08000da4   Section        0  usart.o(i.usart_initialize)
+    i.usart_waiting                          0x08000e50   Section        0  usart.o(i.usart_waiting)
     .data                                    0x20000000   Section        1  main.o(.data)
     .data                                    0x20000004   Section        4  led.o(.data)
     buffer                                   0x20000004   Data           4  led.o(.data)
@@ -532,19 +532,19 @@ Image Symbol Table
     animation_initialize                     0x08000685   Thumb Code    40  animation.o(i.animation_initialize)
     animation_triggerBG                      0x080006b5   Thumb Code    30  animation.o(i.animation_triggerBG)
     animation_triggerFG                      0x080006dd   Thumb Code    30  animation.o(i.animation_triggerFG)
-    led_cycle                                0x08000905   Thumb Code   176  led.o(i.led_cycle)
-    led_initialize                           0x080009bd   Thumb Code   104  led.o(i.led_initialize)
-    led_setLEDBuffer                         0x08000a39   Thumb Code     6  led.o(i.led_setLEDBuffer)
-    main                                     0x08000a45   Thumb Code    94  main.o(i.main)
-    rfm_initialize                           0x08000aa9   Thumb Code   116  rfm.o(i.rfm_initialize)
-    sc_initialize                            0x08000ba9   Thumb Code    26  sc.o(i.sc_initialize)
-    sc_waitForCycle                          0x08000bd1   Thumb Code    30  sc.o(i.sc_waitForCycle)
-    usart_checkNewCommand                    0x08000bfd   Thumb Code   264  usart.o(i.usart_checkNewCommand)
-    usart_cycle                              0x08000d19   Thumb Code    26  usart.o(i.usart_cycle)
-    usart_initialize                         0x08000d39   Thumb Code   136  usart.o(i.usart_initialize)
-    usart_waiting                            0x08000de5   Thumb Code     6  usart.o(i.usart_waiting)
-    Region$$Table$$Base                      0x08000df0   Number         0  anon$$obj.o(Region$$Table)
-    Region$$Table$$Limit                     0x08000e10   Number         0  anon$$obj.o(Region$$Table)
+    led_cycle                                0x08000971   Thumb Code   176  led.o(i.led_cycle)
+    led_initialize                           0x08000a29   Thumb Code   104  led.o(i.led_initialize)
+    led_setLEDBuffer                         0x08000aa5   Thumb Code     6  led.o(i.led_setLEDBuffer)
+    main                                     0x08000ab1   Thumb Code    94  main.o(i.main)
+    rfm_initialize                           0x08000b15   Thumb Code   116  rfm.o(i.rfm_initialize)
+    sc_initialize                            0x08000c15   Thumb Code    26  sc.o(i.sc_initialize)
+    sc_waitForCycle                          0x08000c3d   Thumb Code    30  sc.o(i.sc_waitForCycle)
+    usart_checkNewCommand                    0x08000c69   Thumb Code   264  usart.o(i.usart_checkNewCommand)
+    usart_cycle                              0x08000d85   Thumb Code    26  usart.o(i.usart_cycle)
+    usart_initialize                         0x08000da5   Thumb Code   136  usart.o(i.usart_initialize)
+    usart_waiting                            0x08000e51   Thumb Code     6  usart.o(i.usart_waiting)
+    Region$$Table$$Base                      0x08000e5c   Number         0  anon$$obj.o(Region$$Table)
+    Region$$Table$$Limit                     0x08000e7c   Number         0  anon$$obj.o(Region$$Table)
     device_adress                            0x20000000   Data           1  main.o(.data)
     old_value                                0x20000008   Data           2  sc.o(.data)
     waiting                                  0x2000000c   Data           1  usart.o(.data)
@@ -574,9 +574,9 @@ Memory Map of the image
 
   Image Entry point : 0x08000155
 
-  Load Region LR_1 (Base: 0x08000000, Size: 0x00000ea8, Max: 0xffffffff, ABSOLUTE)
+  Load Region LR_1 (Base: 0x08000000, Size: 0x00000f14, Max: 0xffffffff, ABSOLUTE)
 
-    Execution Region ER_RO (Base: 0x08000000, Size: 0x00000e10, Max: 0xffffffff, ABSOLUTE)
+    Execution Region ER_RO (Base: 0x08000000, Size: 0x00000e7c, Max: 0xffffffff, ABSOLUTE)
 
     Base Addr    Size         Type   Attr      Idx    E Section Name        Object
 
@@ -647,21 +647,21 @@ Memory Map of the image
     0x080006dc   0x00000028   Code   RO          230    i.animation_triggerFG  animation.o
     0x08000704   0x0000004c   Code   RO          231    i.blinkCycle        animation.o
     0x08000750   0x0000005c   Code   RO          232    i.blinkTrigger      animation.o
-    0x080007ac   0x0000013c   Code   RO          233    i.constColorCycle   animation.o
-    0x080008e8   0x0000001c   Code   RO          234    i.constColorTrigger  animation.o
-    0x08000904   0x000000b8   Code   RO           76    i.led_cycle         led.o
-    0x080009bc   0x0000007c   Code   RO           77    i.led_initialize    led.o
-    0x08000a38   0x0000000c   Code   RO           78    i.led_setLEDBuffer  led.o
-    0x08000a44   0x00000064   Code   RO            4    i.main              main.o
-    0x08000aa8   0x00000084   Code   RO          198    i.rfm_initialize    rfm.o
-    0x08000b2c   0x0000007c   Code   RO          199    i.rfm_writeByte     rfm.o
-    0x08000ba8   0x00000028   Code   RO          110    i.sc_initialize     sc.o
-    0x08000bd0   0x0000002c   Code   RO          111    i.sc_waitForCycle   sc.o
-    0x08000bfc   0x0000011c   Code   RO          141    i.usart_checkNewCommand  usart.o
-    0x08000d18   0x00000020   Code   RO          142    i.usart_cycle       usart.o
-    0x08000d38   0x000000ac   Code   RO          143    i.usart_initialize  usart.o
-    0x08000de4   0x0000000c   Code   RO          144    i.usart_waiting     usart.o
-    0x08000df0   0x00000020   Data   RO          525    Region$$Table       anon$$obj.o
+    0x080007ac   0x000001a8   Code   RO          233    i.constColorCycle   animation.o
+    0x08000954   0x0000001c   Code   RO          234    i.constColorTrigger  animation.o
+    0x08000970   0x000000b8   Code   RO           76    i.led_cycle         led.o
+    0x08000a28   0x0000007c   Code   RO           77    i.led_initialize    led.o
+    0x08000aa4   0x0000000c   Code   RO           78    i.led_setLEDBuffer  led.o
+    0x08000ab0   0x00000064   Code   RO            4    i.main              main.o
+    0x08000b14   0x00000084   Code   RO          198    i.rfm_initialize    rfm.o
+    0x08000b98   0x0000007c   Code   RO          199    i.rfm_writeByte     rfm.o
+    0x08000c14   0x00000028   Code   RO          110    i.sc_initialize     sc.o
+    0x08000c3c   0x0000002c   Code   RO          111    i.sc_waitForCycle   sc.o
+    0x08000c68   0x0000011c   Code   RO          141    i.usart_checkNewCommand  usart.o
+    0x08000d84   0x00000020   Code   RO          142    i.usart_cycle       usart.o
+    0x08000da4   0x000000ac   Code   RO          143    i.usart_initialize  usart.o
+    0x08000e50   0x0000000c   Code   RO          144    i.usart_waiting     usart.o
+    0x08000e5c   0x00000020   Data   RO          525    Region$$Table       anon$$obj.o
 
 
     Execution Region ER_RW (Base: 0x20000000, Size: 0x00000098, Max: 0xffffffff, ABSOLUTE)
@@ -699,17 +699,17 @@ Image component sizes
 
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Object Name
 
-       776        102          0         36       1200       7985   animation.o
-       320         34          0          4          0       2028   led.o
-       236         16          0          1          0       6274   main.o
-       256         22          0         68          0       2491   rfm.o
-        84         28          0          2          0        974   sc.o
-       116         56        176          0       1536        640   startup_stm32f031.o
-       344         38          0         20          0       2093   system_stm32f0xx.o
-       500         68          0         15        100       3680   usart.o
+       884        104          0         36       1200       8637   animation.o
+       320         34          0          4          0       2188   led.o
+       236         16          0          1          0       6434   main.o
+       256         22          0         68          0       2623   rfm.o
+        84         28          0          2          0       1070   sc.o
+       116         56        176          0       1536        672   startup_stm32f031.o
+       344         38          0         20          0       2221   system_stm32f0xx.o
+       500         68          0         15        100       3872   usart.o
 
     ----------------------------------------------------------------------
-      2632        364        208        152       2836      26165   Object Totals
+      2740        366        208        152       2836      27717   Object Totals
          0          0         32          0          0          0   (incl. Generated)
          0          0          0          6          0          0   (incl. Padding)
 
@@ -759,15 +759,15 @@ Image component sizes
 
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   
 
-      3392        380        208        152       2936      25825   Grand Totals
-      3392        380        208        152       2936      25825   ELF Image Totals
-      3392        380        208        152          0          0   ROM Totals
+      3500        382        208        152       2936      27377   Grand Totals
+      3500        382        208        152       2936      27377   ELF Image Totals
+      3500        382        208        152          0          0   ROM Totals
 
 ==============================================================================
 
-    Total RO  Size (Code + RO Data)                 3600 (   3.52kB)
+    Total RO  Size (Code + RO Data)                 3708 (   3.62kB)
     Total RW  Size (RW Data + ZI Data)              3088 (   3.02kB)
-    Total ROM Size (Code + RO Data + RW Data)       3752 (   3.66kB)
+    Total ROM Size (Code + RO Data + RW Data)       3860 (   3.77kB)
 
 ==============================================================================
 

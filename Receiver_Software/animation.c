@@ -35,7 +35,8 @@ static uint16_t ColorCounter;
 
 ANIMATION_TYPE FGanimationList[] = 
 {
-	{blinkCycle, blinkTrigger}
+	{blinkCycle, blinkTrigger} // 0
+	{newAnimation, new
 };
 
 ANIMATION_TYPE BGanimationList[] = 
@@ -50,7 +51,7 @@ void animation_initialize(void){
 		GPIOA->MODER  &=  ~(GPIO_MODER_MODER12);
 		GPIOA->MODER  |=  (GPIO_MODER_MODER12_0);
 		led_setLEDBuffer(buffer);
-		speed = 3;
+		speed = 10;
 }
 
 
@@ -79,8 +80,9 @@ void animation_triggerBG(uint8_t nr, uint8_t v1, uint8_t v2, uint8_t v3){
 
 
 
-RGB tmp;
 uint8_t dec;
+
+
 static void blinkCycle(void){
 
 	if(counter>0){
@@ -101,7 +103,7 @@ static void blinkCycle(void){
 }
 
 static void blinkTrigger(uint8_t v1, uint8_t v2, uint8_t v3){
-		
+		RGB tmp;
 		tmp.r = (v2&0xF8);
 		tmp.g = (v2&0x7)<<5 | (v3&0xC)>>3;
 		tmp.b = (v3&0x3E)<<2;
@@ -116,44 +118,52 @@ RGB constColor = {0xFF,0x00,0x00};
 
 
 static void constColorCycle(void){
+	int i;
 	RGB color;
 	uint16_t s;
 	uint16_t c;
 	ColorCounter+=speed;
 	if(ColorCounter >= 2400)ColorCounter-=2400;
-	s = ColorCounter/400;
-	c = ColorCounter-s*400;
 	
-	switch(s){
-		case 4:
-			color.r = c/2;
-			color.b = 200;
-			break;
-		case 0:
-			color.r = 200;
-			color.g = c/2;
-			break;
-		case	1:
-			color.g = 200;
-			color.r = 200-c/2;
-			break;
-		case 2:
-			color.b = c/2;
-			color.g = 200;
-			break;
-		case 3:
-			color.b = 200;
-			color.g = 200-c/2;
-			break;
-		case 5:
-			color.b = 200-c/2;
-			color.r = 200;
-			break;
-		default:
-			break;
-	}
-	
-	animation_setBGRange(0,LED_NR-1,RGBbrightness(color,128));
+	for(i=0;i<52;i++){
+		s = ((ColorCounter+i*25)%2400)/400;
+		c = ((ColorCounter+i*25)%2400)-s*400;
+		color.r = 0;
+		color.g = 0;
+		color.b = 0;
+		
+		switch(s){
+			case 4:
+				color.r = c/2;
+				color.b = 200;
+				break;
+			case 0:
+				color.r = 200;
+				color.g = c/2;
+				break;
+			case	1:
+				color.g = 200;
+				color.r = 200-c/2;
+				break;
+			case 2:
+				color.b = c/2;
+				color.g = 200;
+				break;
+			case 3:
+				color.b = 200;
+				color.g = 200-c/2;
+				break;
+			case 5:
+				color.b = 200-c/2;
+				color.r = 200;
+				break;
+			default:
+				break;
+		}
+		animation_setBG(i,RGBbrightness(color,64));
+		animation_setBG(104-i,RGBbrightness(color,64));
+}
+
 }
 
 static void constColorTrigger(uint8_t v1, uint8_t v2, uint8_t v3){

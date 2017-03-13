@@ -64,29 +64,22 @@ int main (void) {
 	
 			//Colors
 		
-  // initialize peripherals
-  SystemCoreClockConfigure();               // configure System Clock
-  SystemCoreClockUpdate();
-	RCC->AHBENR |= RCC_AHBENR_GPIOBEN | RCC_AHBENR_GPIOAEN;
-
-
+		// initialize peripherals
+		SystemCoreClockConfigure();               // configure System Clock
+		SystemCoreClockUpdate();
+		RCC->AHBENR |= RCC_AHBENR_GPIOBEN | RCC_AHBENR_GPIOAEN;
 
 		//Init Functions
 		led_initialize();
 		sc_initialize();
 		usart_initialize();
 		rfm_initialize();
-			animation_initialize();
+		animation_initialize();
 
-		
-		
-		
-	
 		while(1){
 			GPIOA->BSRR = GPIO_BSRR_BS_12;
 			animation_cycle();
 			led_cycle();
-			animation_cycle();
 			usart_cycle();
 			GPIOA->BSRR = GPIO_BSRR_BR_12;
 

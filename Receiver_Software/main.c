@@ -20,13 +20,14 @@
 #include "rfm.h"
 #include "animation.h"
 #include "info.h"
-
+#include "accel.h"
 /*----------------------------------------------------------------------------
  * SystemCoreClockConfigure: configure SystemCoreClock using HSI
                              (HSE is not populated on Discovery board)
  *----------------------------------------------------------------------------*/
 void SystemCoreClockConfigure(void) {
 
+	
   RCC->CR |= ((uint32_t)RCC_CR_HSION);                     // Enable HSI
   while ((RCC->CR & RCC_CR_HSIRDY) == 0);                  // Wait for HSI Ready
 
@@ -51,6 +52,8 @@ void SystemCoreClockConfigure(void) {
   RCC->CFGR &= ~RCC_CFGR_SW;                               // Select PLL as system clock source
   RCC->CFGR |=  RCC_CFGR_SW_PLL;
   while ((RCC->CFGR & RCC_CFGR_SWS) != RCC_CFGR_SWS_PLL);  // Wait till PLL is system clock src
+	
+	RCC->CR &= ~RCC_CR_HSEON;
 }
 
 
@@ -74,14 +77,16 @@ int main (void) {
 		sc_initialize();
 		usart_initialize();
 		rfm_initialize();
+		accel_init();
 		animation_initialize();
 
 		while(1){
-			GPIOA->BSRR = GPIO_BSRR_BS_12;
+			//GPIOA->BSRR = GPIO_BSRR_BS_12;
+			accel_cycle();
 			animation_cycle();
 			led_cycle();
 			usart_cycle();
-			GPIOA->BSRR = GPIO_BSRR_BR_12;
+			//GPIOA->BSRR = GPIO_BSRR_BR_12;
 
 		
 			

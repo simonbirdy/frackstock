@@ -5,6 +5,7 @@
 ".\objects\usart.o"
 ".\objects\rfm.o"
 ".\objects\animation.o"
+".\objects\accel.o"
 "C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.4.0\CMSIS\Lib\ARM\arm_cortexM0l_math.lib"
 ".\objects\startup_stm32f031.o"
 ".\objects\system_stm32f0xx.o"

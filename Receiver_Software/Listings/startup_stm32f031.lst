@@ -406,7 +406,7 @@ ork --depend=.\objects\startup_stm32f031.d -o.\objects\startup_stm32f031.o -IY:
 _v5\ARM\PACK\ARM\CMSIS\4.4.0\CMSIS\Include -IC:\Keil_v5\ARM\PACK\Keil\STM32F0xx
 _DFP\1.4.0\Device\Include --predefine="__EVAL SETA 1" --predefine="__UVISION_VE
 RSION SETA 516" --predefine="_RTE_ SETA 1" --predefine="STM32F031 SETA 1" --lis
-t=.\listings\startup_stm32f031.lst RTE\Device\STM32F031K6\startup_stm32f031.s
+t=.\listings\startup_stm32f031.lst RTE\Device\STM32F031F6\startup_stm32f031.s
 
 
 
@@ -417,7 +417,7 @@ STACK 00000000
 
 Symbol: STACK
    Definitions
-      At line 42 in file RTE\Device\STM32F031K6\startup_stm32f031.s
+      At line 42 in file RTE\Device\STM32F031F6\startup_stm32f031.s
    Uses
       None
 Comment: STACK unused
@@ -425,19 +425,19 @@ Stack_Mem 00000000
 
 Symbol: Stack_Mem
    Definitions
-      At line 43 in file RTE\Device\STM32F031K6\startup_stm32f031.s
+      At line 43 in file RTE\Device\STM32F031F6\startup_stm32f031.s
    Uses
-      At line 256 in file RTE\Device\STM32F031K6\startup_stm32f031.s
-      At line 258 in file RTE\Device\STM32F031K6\startup_stm32f031.s
+      At line 256 in file RTE\Device\STM32F031F6\startup_stm32f031.s
+      At line 258 in file RTE\Device\STM32F031F6\startup_stm32f031.s
 
 __initial_sp 00000400
 
 Symbol: __initial_sp
    Definitions
-      At line 44 in file RTE\Device\STM32F031K6\startup_stm32f031.s
+      At line 44 in file RTE\Device\STM32F031F6\startup_stm32f031.s
    Uses
-      At line 68 in file RTE\Device\STM32F031K6\startup_stm32f031.s
-      At line 129 in file RTE\Device\STM32F031K6\startup_stm32f031.s
+      At line 68 in file RTE\Device\STM32F031F6\startup_stm32f031.s
+      At line 129 in file RTE\Device\STM32F031F6\startup_stm32f031.s
 
 3 symbols
 
@@ -450,7 +450,7 @@ HEAP 00000000
 
 Symbol: HEAP
    Definitions
-      At line 53 in file RTE\Device\STM32F031K6\startup_stm32f031.s
+      At line 53 in file RTE\Device\STM32F031F6\startup_stm32f031.s
    Uses
       None
 Comment: HEAP unused
@@ -458,16 +458,16 @@ Heap_Mem 00000000
 
 Symbol: Heap_Mem
    Definitions
-      At line 55 in file RTE\Device\STM32F031K6\startup_stm32f031.s
+      At line 55 in file RTE\Device\STM32F031F6\startup_stm32f031.s
    Uses
-      At line 255 in file RTE\Device\STM32F031K6\startup_stm32f031.s
-      At line 257 in file RTE\Device\STM32F031K6\startup_stm32f031.s
+      At line 255 in file RTE\Device\STM32F031F6\startup_stm32f031.s
+      At line 257 in file RTE\Device\STM32F031F6\startup_stm32f031.s
 
 __heap_base 00000000
 
 Symbol: __heap_base
    Definitions
-      At line 54 in file RTE\Device\STM32F031K6\startup_stm32f031.s
+      At line 54 in file RTE\Device\STM32F031F6\startup_stm32f031.s
    Uses
       None
 Comment: __heap_base unused
@@ -475,7 +475,7 @@ __heap_limit 00000200
 
 Symbol: __heap_limit
    Definitions
-      At line 56 in file RTE\Device\STM32F031K6\startup_stm32f031.s
+      At line 56 in file RTE\Device\STM32F031F6\startup_stm32f031.s
    Uses
       None
 Comment: __heap_limit unused
@@ -490,7 +490,7 @@ RESET 00000000
 
 Symbol: RESET
    Definitions
-      At line 63 in file RTE\Device\STM32F031K6\startup_stm32f031.s
+      At line 63 in file RTE\Device\STM32F031F6\startup_stm32f031.s
    Uses
       None
 Comment: RESET unused
@@ -498,19 +498,19 @@ __Vectors 00000000
 
 Symbol: __Vectors
    Definitions
-      At line 68 in file RTE\Device\STM32F031K6\startup_stm32f031.s
+      At line 68 in file RTE\Device\STM32F031F6\startup_stm32f031.s
    Uses
-      At line 64 in file RTE\Device\STM32F031K6\startup_stm32f031.s
-      At line 117 in file RTE\Device\STM32F031K6\startup_stm32f031.s
+      At line 64 in file RTE\Device\STM32F031F6\startup_stm32f031.s
+      At line 117 in file RTE\Device\STM32F031F6\startup_stm32f031.s
 
 __Vectors_End 000000B0
 
 Symbol: __Vectors_End
    Definitions
-      At line 115 in file RTE\Device\STM32F031K6\startup_stm32f031.s
+      At line 115 in file RTE\Device\STM32F031F6\startup_stm32f031.s
    Uses
-      At line 65 in file RTE\Device\STM32F031K6\startup_stm32f031.s
-      At line 117 in file RTE\Device\STM32F031K6\startup_stm32f031.s
+      At line 65 in file RTE\Device\STM32F031F6\startup_stm32f031.s
+      At line 117 in file RTE\Device\STM32F031F6\startup_stm32f031.s
 
 3 symbols
 
@@ -523,7 +523,7 @@ Relocatable symbols
 
 Symbol: .text
    Definitions
-      At line 119 in file RTE\Device\STM32F031K6\startup_stm32f031.s
+      At line 119 in file RTE\Device\STM32F031F6\startup_stm32f031.s
    Uses
       None
 Comment: .text unused
@@ -531,51 +531,51 @@ ADC1_IRQHandler 00000030
 
 Symbol: ADC1_IRQHandler
    Definitions
-      At line 221 in file RTE\Device\STM32F031K6\startup_stm32f031.s
+      At line 221 in file RTE\Device\STM32F031F6\startup_stm32f031.s
    Uses
-      At line 98 in file RTE\Device\STM32F031K6\startup_stm32f031.s
-      At line 197 in file RTE\Device\STM32F031K6\startup_stm32f031.s
+      At line 98 in file RTE\Device\STM32F031F6\startup_stm32f031.s
+      At line 197 in file RTE\Device\STM32F031F6\startup_stm32f031.s
 
 ApplicationStart 0000001E
 
 Symbol: ApplicationStart
    Definitions
-      At line 153 in file RTE\Device\STM32F031K6\startup_stm32f031.s
+      At line 153 in file RTE\Device\STM32F031F6\startup_stm32f031.s
    Uses
-      At line 140 in file RTE\Device\STM32F031K6\startup_stm32f031.s
+      At line 140 in file RTE\Device\STM32F031F6\startup_stm32f031.s
 Comment: ApplicationStart used once
 DMA1_Channel1_IRQHandler 00000030
 
 Symbol: DMA1_Channel1_IRQHandler
    Definitions
-      At line 218 in file RTE\Device\STM32F031K6\startup_stm32f031.s
+      At line 218 in file RTE\Device\STM32F031F6\startup_stm32f031.s
    Uses
-      At line 95 in file RTE\Device\STM32F031K6\startup_stm32f031.s
-      At line 194 in file RTE\Device\STM32F031K6\startup_stm32f031.s
+      At line 95 in file RTE\Device\STM32F031F6\startup_stm32f031.s
+      At line 194 in file RTE\Device\STM32F031F6\startup_stm32f031.s
 
 DMA1_Channel2_3_IRQHandler 00000030
 
 Symbol: DMA1_Channel2_3_IRQHandler
    Definitions
-      At line 219 in file RTE\Device\STM32F031K6\startup_stm32f031.s
+      At line 219 in file RTE\Device\STM32F031F6\startup_stm32f031.s
    Uses
-      At line 96 in file RTE\Device\STM32F031K6\startup_stm32f031.s
-      At line 195 in file RTE\Device\STM32F031K6\startup_stm32f031.s
+      At line 96 in file RTE\Device\STM32F031F6\startup_stm32f031.s
+      At line 195 in file RTE\Device\STM32F031F6\startup_stm32f031.s
 
 DMA1_Channel4_5_IRQHandler 00000030
 
 Symbol: DMA1_Channel4_5_IRQHandler
    Definitions
-      At line 220 in file RTE\Device\STM32F031K6\startup_stm32f031.s
+      At line 220 in file RTE\Device\STM32F031F6\startup_stm32f031.s
    Uses
-      At line 97 in file RTE\Device\STM32F031K6\startup_stm32f031.s
-      At line 196 in file RTE\Device\STM32F031K6\startup_stm32f031.s
+      At line 97 in file RTE\Device\STM32F031F6\startup_stm32f031.s
+      At line 196 in file RTE\Device\STM32F031F6\startup_stm32f031.s
 
 Default_Handler 00000030
 
 Symbol: Default_Handler
    Definitions
-      At line 184 in file RTE\Device\STM32F031K6\startup_stm32f031.s
+      At line 184 in file RTE\Device\STM32F031F6\startup_stm32f031.s
    Uses
       None
 
@@ -589,55 +589,55 @@ EXTI0_1_IRQHandler 00000030
 
 Symbol: EXTI0_1_IRQHandler
    Definitions
-      At line 215 in file RTE\Device\STM32F031K6\startup_stm32f031.s
+      At line 215 in file RTE\Device\STM32F031F6\startup_stm32f031.s
    Uses
-      At line 91 in file RTE\Device\STM32F031K6\startup_stm32f031.s
-      At line 191 in file RTE\Device\STM32F031K6\startup_stm32f031.s
+      At line 91 in file RTE\Device\STM32F031F6\startup_stm32f031.s
+      At line 191 in file RTE\Device\STM32F031F6\startup_stm32f031.s
 
 EXTI2_3_IRQHandler 00000030
 
 Symbol: EXTI2_3_IRQHandler
    Definitions
-      At line 216 in file RTE\Device\STM32F031K6\startup_stm32f031.s
+      At line 216 in file RTE\Device\STM32F031F6\startup_stm32f031.s
    Uses
-      At line 92 in file RTE\Device\STM32F031K6\startup_stm32f031.s
-      At line 192 in file RTE\Device\STM32F031K6\startup_stm32f031.s
+      At line 92 in file RTE\Device\STM32F031F6\startup_stm32f031.s
+      At line 192 in file RTE\Device\STM32F031F6\startup_stm32f031.s
 
 EXTI4_15_IRQHandler 00000030
 
 Symbol: EXTI4_15_IRQHandler
    Definitions
-      At line 217 in file RTE\Device\STM32F031K6\startup_stm32f031.s
+      At line 217 in file RTE\Device\STM32F031F6\startup_stm32f031.s
    Uses
-      At line 93 in file RTE\Device\STM32F031K6\startup_stm32f031.s
-      At line 193 in file RTE\Device\STM32F031K6\startup_stm32f031.s
+      At line 93 in file RTE\Device\STM32F031F6\startup_stm32f031.s
+      At line 193 in file RTE\Device\STM32F031F6\startup_stm32f031.s
 
 FLASH_IRQHandler 00000030
 
 Symbol: FLASH_IRQHandler
    Definitions
-      At line 213 in file RTE\Device\STM32F031K6\startup_stm32f031.s
+      At line 213 in file RTE\Device\STM32F031F6\startup_stm32f031.s
    Uses
-      At line 89 in file RTE\Device\STM32F031K6\startup_stm32f031.s
-      At line 189 in file RTE\Device\STM32F031K6\startup_stm32f031.s
+      At line 89 in file RTE\Device\STM32F031F6\startup_stm32f031.s
+      At line 189 in file RTE\Device\STM32F031F6\startup_stm32f031.s
 
 HardFault_Handler 00000028
 
 Symbol: HardFault_Handler
    Definitions
-      At line 167 in file RTE\Device\STM32F031K6\startup_stm32f031.s
+      At line 167 in file RTE\Device\STM32F031F6\startup_stm32f031.s
    Uses
-      At line 71 in file RTE\Device\STM32F031K6\startup_stm32f031.s
-      At line 168 in file RTE\Device\STM32F031K6\startup_stm32f031.s
+      At line 71 in file RTE\Device\STM32F031F6\startup_stm32f031.s
+      At line 168 in file RTE\Device\STM32F031F6\startup_stm32f031.s
 
 I2C1_IRQHandler 00000030
 
 Symbol: I2C1_IRQHandler
    Definitions
-      At line 229 in file RTE\Device\STM32F031K6\startup_stm32f031.s
+      At line 229 in file RTE\Device\STM32F031F6\startup_stm32f031.s
    Uses
-      At line 109 in file RTE\Device\STM32F031K6\startup_stm32f031.s
-      At line 205 in file RTE\Device\STM32F031K6\startup_stm32f031.s
+      At line 109 in file RTE\Device\STM32F031F6\startup_stm32f031.s
+      At line 205 in file RTE\Device\STM32F031F6\startup_stm32f031.s
 
 NMI_Handler 00000026
 
@@ -649,64 +649,64 @@ Symbol: NMI_Handler
 ARM Macro Assembler    Page 3 Alphabetic symbol ordering
 Relocatable symbols
 
-      At line 162 in file RTE\Device\STM32F031K6\startup_stm32f031.s
+      At line 162 in file RTE\Device\STM32F031F6\startup_stm32f031.s
    Uses
-      At line 70 in file RTE\Device\STM32F031K6\startup_stm32f031.s
-      At line 163 in file RTE\Device\STM32F031K6\startup_stm32f031.s
+      At line 70 in file RTE\Device\STM32F031F6\startup_stm32f031.s
+      At line 163 in file RTE\Device\STM32F031F6\startup_stm32f031.s
 
 PVD_IRQHandler 00000030
 
 Symbol: PVD_IRQHandler
    Definitions
-      At line 211 in file RTE\Device\STM32F031K6\startup_stm32f031.s
+      At line 211 in file RTE\Device\STM32F031F6\startup_stm32f031.s
    Uses
-      At line 87 in file RTE\Device\STM32F031K6\startup_stm32f031.s
-      At line 187 in file RTE\Device\STM32F031K6\startup_stm32f031.s
+      At line 87 in file RTE\Device\STM32F031F6\startup_stm32f031.s
+      At line 187 in file RTE\Device\STM32F031F6\startup_stm32f031.s
 
 PendSV_Handler 0000002C
 
 Symbol: PendSV_Handler
    Definitions
-      At line 175 in file RTE\Device\STM32F031K6\startup_stm32f031.s
+      At line 175 in file RTE\Device\STM32F031F6\startup_stm32f031.s
    Uses
-      At line 82 in file RTE\Device\STM32F031K6\startup_stm32f031.s
-      At line 176 in file RTE\Device\STM32F031K6\startup_stm32f031.s
+      At line 82 in file RTE\Device\STM32F031F6\startup_stm32f031.s
+      At line 176 in file RTE\Device\STM32F031F6\startup_stm32f031.s
 
 RCC_IRQHandler 00000030
 
 Symbol: RCC_IRQHandler
    Definitions
-      At line 214 in file RTE\Device\STM32F031K6\startup_stm32f031.s
+      At line 214 in file RTE\Device\STM32F031F6\startup_stm32f031.s
    Uses
-      At line 90 in file RTE\Device\STM32F031K6\startup_stm32f031.s
-      At line 190 in file RTE\Device\STM32F031K6\startup_stm32f031.s
+      At line 90 in file RTE\Device\STM32F031F6\startup_stm32f031.s
+      At line 190 in file RTE\Device\STM32F031F6\startup_stm32f031.s
 
 RTC_IRQHandler 00000030
 
 Symbol: RTC_IRQHandler
    Definitions
-      At line 212 in file RTE\Device\STM32F031K6\startup_stm32f031.s
+      At line 212 in file RTE\Device\STM32F031F6\startup_stm32f031.s
    Uses
-      At line 88 in file RTE\Device\STM32F031K6\startup_stm32f031.s
-      At line 188 in file RTE\Device\STM32F031K6\startup_stm32f031.s
+      At line 88 in file RTE\Device\STM32F031F6\startup_stm32f031.s
+      At line 188 in file RTE\Device\STM32F031F6\startup_stm32f031.s
 
 Reset_Handler 00000000
 
 Symbol: Reset_Handler
    Definitions
-      At line 122 in file RTE\Device\STM32F031K6\startup_stm32f031.s
+      At line 122 in file RTE\Device\STM32F031F6\startup_stm32f031.s
    Uses
-      At line 69 in file RTE\Device\STM32F031K6\startup_stm32f031.s
-      At line 123 in file RTE\Device\STM32F031K6\startup_stm32f031.s
+      At line 69 in file RTE\Device\STM32F031F6\startup_stm32f031.s
+      At line 123 in file RTE\Device\STM32F031F6\startup_stm32f031.s
 
 SPI1_IRQHandler 00000030
 
 Symbol: SPI1_IRQHandler
    Definitions
-      At line 230 in file RTE\Device\STM32F031K6\startup_stm32f031.s
+      At line 230 in file RTE\Device\STM32F031F6\startup_stm32f031.s
    Uses
-      At line 111 in file RTE\Device\STM32F031K6\startup_stm32f031.s
-      At line 206 in file RTE\Device\STM32F031K6\startup_stm32f031.s
+      At line 111 in file RTE\Device\STM32F031F6\startup_stm32f031.s
+      At line 206 in file RTE\Device\STM32F031F6\startup_stm32f031.s
 
 
 
@@ -718,61 +718,61 @@ SVC_Handler 0000002A
 
 Symbol: SVC_Handler
    Definitions
-      At line 171 in file RTE\Device\STM32F031K6\startup_stm32f031.s
+      At line 171 in file RTE\Device\STM32F031F6\startup_stm32f031.s
    Uses
-      At line 79 in file RTE\Device\STM32F031K6\startup_stm32f031.s
-      At line 172 in file RTE\Device\STM32F031K6\startup_stm32f031.s
+      At line 79 in file RTE\Device\STM32F031F6\startup_stm32f031.s
+      At line 172 in file RTE\Device\STM32F031F6\startup_stm32f031.s
 
 SysTick_Handler 0000002E
 
 Symbol: SysTick_Handler
    Definitions
-      At line 179 in file RTE\Device\STM32F031K6\startup_stm32f031.s
+      At line 179 in file RTE\Device\STM32F031F6\startup_stm32f031.s
    Uses
-      At line 83 in file RTE\Device\STM32F031K6\startup_stm32f031.s
-      At line 180 in file RTE\Device\STM32F031K6\startup_stm32f031.s
+      At line 83 in file RTE\Device\STM32F031F6\startup_stm32f031.s
+      At line 180 in file RTE\Device\STM32F031F6\startup_stm32f031.s
 
 TIM14_IRQHandler 00000030
 
 Symbol: TIM14_IRQHandler
    Definitions
-      At line 226 in file RTE\Device\STM32F031K6\startup_stm32f031.s
+      At line 226 in file RTE\Device\STM32F031F6\startup_stm32f031.s
    Uses
-      At line 105 in file RTE\Device\STM32F031K6\startup_stm32f031.s
-      At line 202 in file RTE\Device\STM32F031K6\startup_stm32f031.s
+      At line 105 in file RTE\Device\STM32F031F6\startup_stm32f031.s
+      At line 202 in file RTE\Device\STM32F031F6\startup_stm32f031.s
 
 TIM16_IRQHandler 00000030
 
 Symbol: TIM16_IRQHandler
    Definitions
-      At line 227 in file RTE\Device\STM32F031K6\startup_stm32f031.s
+      At line 227 in file RTE\Device\STM32F031F6\startup_stm32f031.s
    Uses
-      At line 107 in file RTE\Device\STM32F031K6\startup_stm32f031.s
-      At line 203 in file RTE\Device\STM32F031K6\startup_stm32f031.s
+      At line 107 in file RTE\Device\STM32F031F6\startup_stm32f031.s
+      At line 203 in file RTE\Device\STM32F031F6\startup_stm32f031.s
 
 TIM17_IRQHandler 00000030
 
 Symbol: TIM17_IRQHandler
    Definitions
-      At line 228 in file RTE\Device\STM32F031K6\startup_stm32f031.s
+      At line 228 in file RTE\Device\STM32F031F6\startup_stm32f031.s
    Uses
-      At line 108 in file RTE\Device\STM32F031K6\startup_stm32f031.s
-      At line 204 in file RTE\Device\STM32F031K6\startup_stm32f031.s
+      At line 108 in file RTE\Device\STM32F031F6\startup_stm32f031.s
+      At line 204 in file RTE\Device\STM32F031F6\startup_stm32f031.s
 
 TIM1_BRK_UP_TRG_COM_IRQHandler 00000030
 
 Symbol: TIM1_BRK_UP_TRG_COM_IRQHandler
    Definitions
-      At line 222 in file RTE\Device\STM32F031K6\startup_stm32f031.s
+      At line 222 in file RTE\Device\STM32F031F6\startup_stm32f031.s
    Uses
-      At line 99 in file RTE\Device\STM32F031K6\startup_stm32f031.s
-      At line 198 in file RTE\Device\STM32F031K6\startup_stm32f031.s
+      At line 99 in file RTE\Device\STM32F031F6\startup_stm32f031.s
+      At line 198 in file RTE\Device\STM32F031F6\startup_stm32f031.s
 
 TIM1_CC_IRQHandler 00000030
 
 Symbol: TIM1_CC_IRQHandler
    Definitions
-      At line 223 in file RTE\Device\STM32F031K6\startup_stm32f031.s
+      At line 223 in file RTE\Device\STM32F031F6\startup_stm32f031.s
 
 
 
@@ -780,52 +780,52 @@ ARM Macro Assembler    Page 5 Alphabetic symbol ordering
 Relocatable symbols
 
    Uses
-      At line 100 in file RTE\Device\STM32F031K6\startup_stm32f031.s
-      At line 199 in file RTE\Device\STM32F031K6\startup_stm32f031.s
+      At line 100 in file RTE\Device\STM32F031F6\startup_stm32f031.s
+      At line 199 in file RTE\Device\STM32F031F6\startup_stm32f031.s
 
 TIM2_IRQHandler 00000030
 
 Symbol: TIM2_IRQHandler
    Definitions
-      At line 224 in file RTE\Device\STM32F031K6\startup_stm32f031.s
+      At line 224 in file RTE\Device\STM32F031F6\startup_stm32f031.s
    Uses
-      At line 101 in file RTE\Device\STM32F031K6\startup_stm32f031.s
-      At line 200 in file RTE\Device\STM32F031K6\startup_stm32f031.s
+      At line 101 in file RTE\Device\STM32F031F6\startup_stm32f031.s
+      At line 200 in file RTE\Device\STM32F031F6\startup_stm32f031.s
 
 TIM3_IRQHandler 00000030
 
 Symbol: TIM3_IRQHandler
    Definitions
-      At line 225 in file RTE\Device\STM32F031K6\startup_stm32f031.s
+      At line 225 in file RTE\Device\STM32F031F6\startup_stm32f031.s
    Uses
-      At line 102 in file RTE\Device\STM32F031K6\startup_stm32f031.s
-      At line 201 in file RTE\Device\STM32F031K6\startup_stm32f031.s
+      At line 102 in file RTE\Device\STM32F031F6\startup_stm32f031.s
+      At line 201 in file RTE\Device\STM32F031F6\startup_stm32f031.s
 
 USART1_IRQHandler 00000030
 
 Symbol: USART1_IRQHandler
    Definitions
-      At line 231 in file RTE\Device\STM32F031K6\startup_stm32f031.s
+      At line 231 in file RTE\Device\STM32F031F6\startup_stm32f031.s
    Uses
-      At line 113 in file RTE\Device\STM32F031K6\startup_stm32f031.s
-      At line 207 in file RTE\Device\STM32F031K6\startup_stm32f031.s
+      At line 113 in file RTE\Device\STM32F031F6\startup_stm32f031.s
+      At line 207 in file RTE\Device\STM32F031F6\startup_stm32f031.s
 
 WWDG_IRQHandler 00000030
 
 Symbol: WWDG_IRQHandler
    Definitions
-      At line 210 in file RTE\Device\STM32F031K6\startup_stm32f031.s
+      At line 210 in file RTE\Device\STM32F031F6\startup_stm32f031.s
    Uses
-      At line 86 in file RTE\Device\STM32F031K6\startup_stm32f031.s
-      At line 186 in file RTE\Device\STM32F031K6\startup_stm32f031.s
+      At line 86 in file RTE\Device\STM32F031F6\startup_stm32f031.s
+      At line 186 in file RTE\Device\STM32F031F6\startup_stm32f031.s
 
 __user_initial_stackheap 00000034
 
 Symbol: __user_initial_stackheap
    Definitions
-      At line 253 in file RTE\Device\STM32F031K6\startup_stm32f031.s
+      At line 253 in file RTE\Device\STM32F031F6\startup_stm32f031.s
    Uses
-      At line 251 in file RTE\Device\STM32F031K6\startup_stm32f031.s
+      At line 251 in file RTE\Device\STM32F031F6\startup_stm32f031.s
 Comment: __user_initial_stackheap used once
 32 symbols
 
@@ -838,27 +838,27 @@ Heap_Size 00000200
 
 Symbol: Heap_Size
    Definitions
-      At line 51 in file RTE\Device\STM32F031K6\startup_stm32f031.s
+      At line 51 in file RTE\Device\STM32F031F6\startup_stm32f031.s
    Uses
-      At line 55 in file RTE\Device\STM32F031K6\startup_stm32f031.s
-      At line 257 in file RTE\Device\STM32F031K6\startup_stm32f031.s
+      At line 55 in file RTE\Device\STM32F031F6\startup_stm32f031.s
+      At line 257 in file RTE\Device\STM32F031F6\startup_stm32f031.s
 
 Stack_Size 00000400
 
 Symbol: Stack_Size
    Definitions
-      At line 40 in file RTE\Device\STM32F031K6\startup_stm32f031.s
+      At line 40 in file RTE\Device\STM32F031F6\startup_stm32f031.s
    Uses
-      At line 43 in file RTE\Device\STM32F031K6\startup_stm32f031.s
-      At line 256 in file RTE\Device\STM32F031K6\startup_stm32f031.s
+      At line 43 in file RTE\Device\STM32F031F6\startup_stm32f031.s
+      At line 256 in file RTE\Device\STM32F031F6\startup_stm32f031.s
 
 __Vectors_Size 000000B0
 
 Symbol: __Vectors_Size
    Definitions
-      At line 117 in file RTE\Device\STM32F031K6\startup_stm32f031.s
+      At line 117 in file RTE\Device\STM32F031F6\startup_stm32f031.s
    Uses
-      At line 66 in file RTE\Device\STM32F031K6\startup_stm32f031.s
+      At line 66 in file RTE\Device\STM32F031F6\startup_stm32f031.s
 Comment: __Vectors_Size used once
 3 symbols
 
@@ -871,23 +871,23 @@ SystemInit 00000000
 
 Symbol: SystemInit
    Definitions
-      At line 125 in file RTE\Device\STM32F031K6\startup_stm32f031.s
+      At line 125 in file RTE\Device\STM32F031F6\startup_stm32f031.s
    Uses
-      At line 154 in file RTE\Device\STM32F031K6\startup_stm32f031.s
+      At line 154 in file RTE\Device\STM32F031F6\startup_stm32f031.s
 Comment: SystemInit used once
 __main 00000000
 
 Symbol: __main
    Definitions
-      At line 124 in file RTE\Device\STM32F031K6\startup_stm32f031.s
+      At line 124 in file RTE\Device\STM32F031F6\startup_stm32f031.s
    Uses
-      At line 156 in file RTE\Device\STM32F031K6\startup_stm32f031.s
+      At line 156 in file RTE\Device\STM32F031F6\startup_stm32f031.s
 Comment: __main used once
 __use_two_region_memory 00000000
 
 Symbol: __use_two_region_memory
    Definitions
-      At line 250 in file RTE\Device\STM32F031K6\startup_stm32f031.s
+      At line 250 in file RTE\Device\STM32F031F6\startup_stm32f031.s
    Uses
       None
 Comment: __use_two_region_memory unused

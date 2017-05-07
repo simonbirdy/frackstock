@@ -30,21 +30,11 @@ void usart_initialize(void){
 	
 		tailPointer = 0;
 	
-		#ifdef VCOMPORT
-			GPIOA->AFR[0] |= (1<<2*4);
-			GPIOA->MODER  &=  ~(GPIO_MODER_MODER2);
-			GPIOA->MODER  |=  (GPIO_MODER_MODER2_1);
-			GPIOA->AFR[1] |= (1<<7*4);
-			GPIOA->MODER  &=  ~(GPIO_MODER_MODER15);
-			GPIOA->MODER  |=  (GPIO_MODER_MODER15_1);
-		#else
-				GPIOA->AFR[0] |= (1<<2*4);
-			GPIOA->MODER  &=  ~(GPIO_MODER_MODER2);
-			GPIOA->MODER  |=  (GPIO_MODER_MODER2_1);
-			GPIOA->AFR[1] |= (1<<2*4);
-			GPIOA->MODER  &=  ~(GPIO_MODER_MODER10);
-			GPIOA->MODER  |=  (GPIO_MODER_MODER10_1);
-		#endif
+
+		GPIOA->MODER  &=  ~(GPIO_MODER_MODER3);
+		GPIOA->MODER  |=  (GPIO_MODER_MODER3_1);
+		GPIOA->AFR[0] |= (1<<3*4);
+
 	
 		DMA1_Channel3->CCR = DMA_CCR_MINC | DMA_CCR_CIRC;
 		DMA1_Channel3->CNDTR = BUFFER_SIZE;

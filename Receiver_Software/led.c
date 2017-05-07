@@ -23,11 +23,11 @@ void led_initialize(void)
     RCC->AHBENR  	|=   RCC_AHBENR_GPIOAEN;
     
     /* Configure PA3 to USART2_RX, PA2 to USART2_TX */
-		GPIOA->AFR[1] |= (1<<2*4)|(1<<4) | 2;
-    GPIOA->MODER  &=  ~(GPIO_MODER_MODER8);
-    GPIOA->MODER  |=  (GPIO_MODER_MODER8_0);
-		GPIOA->OTYPER |= GPIO_OTYPER_OT_8;
-		GPIOA->BSRR = GPIO_BSRR_BR_8;
+		GPIOA->AFR[0] |=  2<<(4*7);
+    GPIOA->MODER  &=  ~(GPIO_MODER_MODER7);
+    GPIOA->MODER  |=  (GPIO_MODER_MODER7_0);
+		GPIOA->OTYPER |= GPIO_OTYPER_OT_7;
+		GPIOA->BSRR = GPIO_BSRR_BR_7;
 
        
 	
@@ -39,7 +39,7 @@ void led_initialize(void)
 		TIM1->CCMR1 = TIM_CCMR1_OC1M_2 | TIM_CCMR1_OC1M_1 | TIM_CCMR1_OC1PE;
 		TIM1->CCR1 = 0;
 		TIM1->ARR = 60;
-		TIM1->CCER = TIM_CCER_CC1E;
+		TIM1->CCER =  TIM_CCER_CC1NE;
 
 		TIM1->BDTR = TIM_BDTR_MOE;
 		for(i=0;i<10000;i++);
@@ -56,8 +56,8 @@ void led_cycle(void){
 	TIM1->SR &= ~(TIM_SR_UIF);
 	
 	temp_moder = 	 GPIOA->MODER;
-  temp_moder&=  ~(GPIO_MODER_MODER8);
-  temp_moder  |=  (GPIO_MODER_MODER8_1);	
+  temp_moder&=  ~(GPIO_MODER_MODER7);
+  temp_moder  |=  (GPIO_MODER_MODER7_1);	
 	GPIOA->MODER = temp_moder;
 
 	while((TIM1->SR & TIM_SR_UIF) == 0);
@@ -85,10 +85,10 @@ void led_cycle(void){
 
 	while((TIM1->SR & TIM_SR_UIF) == 0);
 	TIM1->CR1 &= ~TIM_CR1_CEN;
-	GPIOA->BSRR = GPIO_BSRR_BR_8;
+	GPIOA->BSRR = GPIO_BSRR_BR_7;
 	temp_moder = 	 GPIOA->MODER;
-  temp_moder&=  ~(GPIO_MODER_MODER8);
-  temp_moder  |=  (GPIO_MODER_MODER8_0);	
+  temp_moder&=  ~(GPIO_MODER_MODER7);
+  temp_moder  |=  (GPIO_MODER_MODER7_0);	
 	GPIOA->MODER = temp_moder;
 }
 

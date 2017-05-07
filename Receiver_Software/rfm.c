@@ -59,8 +59,9 @@ void rfm_initialize(void){
 		int i;
 	uint16_t adress;
 	uint16_t data;
-		RCC->AHBENR |=  RCC_AHBENR_GPIOBEN;
-		GPIOB->MODER |= GPIO_MODER_MODER3_0 | GPIO_MODER_MODER5_0;
+		RCC->AHBENR |=  RCC_AHBENR_GPIOFEN | RCC_AHBENR_GPIOBEN;
+		GPIOB->MODER |= GPIO_MODER_MODER1_0;
+		GPIOF->MODER |= GPIO_MODER_MODER0_0;
 	
 		for(i=0;i<sizeof(rfm_send)/2;i++){
 			adress = (2*i)<<8;
@@ -90,10 +91,10 @@ void rfm_delay2(void){
 static void set_sclk(int level){
 	switch(level){
 		case 0:
-			GPIOB->BSRR = GPIO_BSRR_BR_3;
+			GPIOF->BSRR = GPIO_BSRR_BR_0;
 			break;
 		case 1:
-			GPIOB->BSRR = GPIO_BSRR_BS_3;
+			GPIOF->BSRR = GPIO_BSRR_BS_0;
 			break;
 		default:
 			break;
@@ -103,15 +104,15 @@ static void set_sclk(int level){
 static void set_sda(int level){
 		switch(level){
 		case 0:
-			GPIOB->MODER |= GPIO_MODER_MODER4_0;
-			GPIOB->BSRR = GPIO_BSRR_BR_4;
+			GPIOF->MODER |= GPIO_MODER_MODER1_0;
+			GPIOF->BSRR = GPIO_BSRR_BR_1;
 			break;
 		case 1:
-			GPIOB->MODER |= GPIO_MODER_MODER4_0;
-			GPIOB->BSRR = GPIO_BSRR_BS_4;
+			GPIOF->MODER |= GPIO_MODER_MODER1_0;
+			GPIOF->BSRR = GPIO_BSRR_BS_1;
 			break;
 		case 2:
-			GPIOB->MODER &= ~GPIO_MODER_MODER4_0;
+			GPIOF->MODER &= ~GPIO_MODER_MODER1_0;
 			break;
 		default:
 			break;
@@ -121,10 +122,10 @@ static void set_sda(int level){
 static void set_cso(int level){
 		switch(level){
 		case 0:
-			GPIOB->BSRR = GPIO_BSRR_BR_5;
+			GPIOB->BSRR = GPIO_BSRR_BR_1;
 			break;
 		case 1:
-			GPIOB->BSRR = GPIO_BSRR_BS_5;
+			GPIOB->BSRR = GPIO_BSRR_BS_1;
 			break;
 		default:
 			break;
@@ -132,7 +133,7 @@ static void set_cso(int level){
 }
 
 static int get_sda(void){
-	if(GPIOB->IDR & GPIO_IDR_4){
+	if(GPIOF->IDR & GPIO_IDR_1){
 		return 1;
 	}
 	else{

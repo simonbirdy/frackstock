@@ -1,6 +1,7 @@
 #include "animation.h"
 #include "stm32f0xx.h"  
 #include "led.h"
+#include "accel.h"
 
 
 RGB white = {0xFF,0xFF,0xFF};
@@ -36,7 +37,6 @@ static uint16_t ColorCounter;
 ANIMATION_TYPE FGanimationList[] = 
 {
 	{blinkCycle, blinkTrigger} // 0
-	{newAnimation, new
 };
 
 ANIMATION_TYPE BGanimationList[] = 
@@ -110,7 +110,7 @@ static void blinkTrigger(uint8_t v1, uint8_t v2, uint8_t v3){
 	
 		animation_setFGRange(0,LED_NR-1,tmp);
 
-		counter = 255;
+		counter = 200;
 		dec = v1;
 }
 
@@ -122,10 +122,11 @@ static void constColorCycle(void){
 	RGB color;
 	uint16_t s;
 	uint16_t c;
+	ACCEL_TYPE accelData = accel_getData();
 	ColorCounter+=speed;
 	if(ColorCounter >= 2400)ColorCounter-=2400;
 	
-	for(i=0;i<52;i++){
+	/*for(i=0;i<52;i++){
 		s = ((ColorCounter+i*25)%2400)/400;
 		c = ((ColorCounter+i*25)%2400)-s*400;
 		color.r = 0;
@@ -159,11 +160,14 @@ static void constColorCycle(void){
 				break;
 			default:
 				break;
-		}
-		animation_setBG(i,RGBbrightness(color,64));
-		animation_setBG(104-i,RGBbrightness(color,64));
-}
-
+		}*/
+		color.r = (uint8_t)(accelData.x+32);
+		color.g = (uint8_t)(accelData.y+32);
+		color.b = (uint8_t)(accelData.z+32);
+		
+		animation_setBGRange(0,101,color);
+		//animation_setBG(i,RGBbrightness(color,64));
+		//animation_setBG(104-i,RGBbrightness(color,64));
 }
 
 static void constColorTrigger(uint8_t v1, uint8_t v2, uint8_t v3){

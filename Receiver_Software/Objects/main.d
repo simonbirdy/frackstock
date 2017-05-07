@@ -12,3 +12,4 @@
 .\objects\main.o: rfm.h
 .\objects\main.o: animation.h
 .\objects\main.o: info.h
+.\objects\main.o: accel.h

@@ -1,0 +1,46 @@
+Partlist
+
+Exported from schema2.sch at 27.04.17 13:14
+
+EAGLE Version 8.1.0 Copyright (c) 1988-2017 Autodesk, Inc.
+
+Assembly variant: 
+
+Part     Value             Device            Package            Library                          Sheet
+
+C1       100n              C-EUC0603         C0603              rcl                              1
+C3       100n              C-EUC0603         C0603              rcl                              1
+C5       100n              C-EUC0603         C0603              rcl                              1
+C7       22u               C-EUC0805         C0805              resistor                         1
+C8       22u               C-EUC0805         C0805              resistor                         1
+C9       22u               C-EUC0805         C0805              resistor                         1
+C13      10u               C-EUC0805         C0805              resistor                         1
+C14      22u               C-EUC0603         C0603              rcl                              1
+K1       690367280676      690367280676      690367280676       Board_to_Board_Connectors_rev15d 1
+L1       SRN8040TA         SRN8040TA         SRN8040TA_PACK     SRN8040TA                        1
+PAD1                       SMD5              SMD2,54-5,08       wirepad                          1
+PAD2                       SMD5              SMD2,54-5,08       wirepad                          1
+PAD3                       SMD5              SMD2,54-5,08       wirepad                          1
+PAD4                       SMD2              SMD1,27-2,54       wirepad                          1
+PAD5                       SMD2              SMD1,27-2,54       wirepad                          1
+PAD6                       SMD2              SMD1,27-2,54       wirepad                          1
+PAD7                       SMD2              SMD1,27-2,54       wirepad                          1
+PAD8                       SMD2              SMD1,27-2,54       wirepad                          1
+PAD9                       SMD5              SMD2,54-5,08       wirepad                          1
+PAD10                      SMD5              SMD2,54-5,08       wirepad                          1
+R1       1k                R-EU_R0603        R0603              resistor                         1
+R2       4.7k              R-EU_R0603        R0603              resistor                         1
+R3       4.7k              R-EU_R0603        R0603              resistor                         1
+R4                         R-EU_R0603        R0603              resistor                         1
+R5                         R-EU_R0603        R0603              resistor                         1
+R6                         R-EU_R0603        R0603              resistor                         1
+R7                         R-EU_R0603        R0603              resistor                         1
+R8                         R-EU_R1206        R1206              resistor                         1
+R9       10k               R-EU_R0603        R0603              resistor                         1
+R10      10k               R-EU_R0603        R0603              resistor                         1
+R11      22k               R-EU_R0603        R0603              resistor                         1
+U1       MMA7660FCR1       MMA7660FCR1       DFN300X300X100-10N MMA7660                          1
+U2       MCP1700T-3302E/TT MCP1700T-3302E/TT SOT95P237X112-3N   MCP1700T                         1
+U3       STM32F031         STM32F031         TSSOP20            stm32f031                        1
+U4       TPS61235          TPS61235          VQFN               TPS61235                         1
+U6       RFM217            RFM217            RFM217_PACK        RFM217                           1

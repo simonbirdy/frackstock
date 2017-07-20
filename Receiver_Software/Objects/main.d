@@ -13,3 +13,5 @@
 .\objects\main.o: animation.h
 .\objects\main.o: info.h
 .\objects\main.o: accel.h
+.\objects\main.o: adc.h
+.\objects\main.o: control.h

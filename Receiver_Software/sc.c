@@ -9,6 +9,10 @@ void sc_initialize(void){
 	TIM16->CR1 = TIM_CR1_CEN;
 }
 
+uint16_t sc_getTimeCounter(void){
+	return ((uint16_t)TIM16->CNT);
+}
+
 uint8_t sc_waitForCycle(void){ 
 	uint16_t value;
 	value = ((uint16_t)TIM16->CNT)-old_value;

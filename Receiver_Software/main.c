@@ -21,6 +21,9 @@
 #include "animation.h"
 #include "info.h"
 #include "accel.h"
+#include "adc.h"
+#include "control.h"
+
 /*----------------------------------------------------------------------------
  * SystemCoreClockConfigure: configure SystemCoreClock using HSI
                              (HSE is not populated on Discovery board)
@@ -78,11 +81,17 @@ int main (void) {
 		usart_initialize();
 		rfm_initialize();
 		accel_init();
+		adc_initialize();
 		animation_initialize();
+		control_init();
+	
+		device_adress = adc_getID();
 
 		while(1){
 			//GPIOA->BSRR = GPIO_BSRR_BS_12;
+			adc_cycle();
 			accel_cycle();
+			control_cycle();
 			animation_cycle();
 			led_cycle();
 			usart_cycle();

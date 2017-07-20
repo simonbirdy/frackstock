@@ -2,8 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.vos.myapplication">
 
-    <uses-permission android:name="android.permission.INTERNET"/>
-
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -21,6 +20,48 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".stripeActivity"
+            android:label="@string/title_activity_stripe"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name=".sparkActivity"
+            android:label="@string/title_activity_spark"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name=".ConstColorActivity"
+            android:label="@string/title_activity_const_color"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".RainbowActivity"
+            android:label="@string/title_activity_rainbow"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".BlinkActivity"
+            android:label="@string/title_activity_blink"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".RainActivity"
+            android:label="@string/title_activity_rain"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".stroboActivity"
+            android:label="@string/title_activity_strobo"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".TriggerActivity"
+            android:label="@string/title_activity_trigger"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>

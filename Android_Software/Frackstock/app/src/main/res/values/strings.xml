@@ -1,4 +1,12 @@
 <resources>
     <string name="app_name">Frackstock</string>
     <string name="action_settings">Settings</string>
+    <string name="title_activity_stripe">stripeActivity</string>
+    <string name="title_activity_spark">sparkActivity</string>
+    <string name="title_activity_const_color">ConstColorActivity</string>
+    <string name="title_activity_rainbow">RainbowActivity</string>
+    <string name="title_activity_blink">BlinkActivity</string>
+    <string name="title_activity_rain">RainActivity</string>
+    <string name="title_activity_strobo">stroboActivity</string>
+    <string name="title_activity_trigger">TriggerActivity</string>
 </resources>

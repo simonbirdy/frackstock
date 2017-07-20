@@ -17,8 +17,8 @@ char  replyPacekt[] = "Hi there! Got the message :-)";
 
 
 
-const char* ssid = "ESP-Accesspoint";
-const char* password = "12345678";  // set to "" for open access point w/o passwortd
+const char* ssid = "DerEineHut";
+const char* password = "mellllon";  // set to "" for open access point w/o passwortd
 
 char session;
 

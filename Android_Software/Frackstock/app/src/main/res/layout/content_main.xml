@@ -18,37 +18,97 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
         <Button
-            android:id="@+id/bWhite"
+            android:id="@+id/bTrigger"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
-            android:background="@color/white"
-            android:text="White"/>
+            android:text="Triggers"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+
+            android:text="Foreground"/>
         <Button
-            android:id="@+id/bRed"
+            android:id="@+id/bBlink"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
-            android:background="@color/red"
-            android:text="Short"/>
+            android:text="Blink"/>
+
         <Button
-            android:id="@+id/bGreen"
+            android:id="@+id/bRain"
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:background="@color/green"
-
             android:layout_weight="1"
+            android:text="RainDrops"/>
 
-            android:text="Middle"/>
+
         <Button
-            android:id="@+id/bBlue"
+            android:id="@+id/bStrobo"
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:background="@color/blue"
+            android:layout_weight="1"
+            android:text="Strobo"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+
+            android:text="Background"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+            <Button
+                android:id="@+id/bStripeLaunch"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Stripes"/>
+            <Button
+                android:id="@+id/bSparksLaunch"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Sparks"/>
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <Button
+            android:id="@+id/bConstColor"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="ConstColor"/>
+        <Button
+            android:id="@+id/bRainbow"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
 
             android:layout_weight="1"
 
-            android:text="Long"/>
+            android:text="Rainbow"/>
+    </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+
+            android:text="Global Brightness"/>
+
+        <SeekBar
+            android:id="@+id/sbGlobalBrightness"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="255"
+            android:layout_weight="1"
+            android:paddingRight="20dp"/>
+
+
 
     </LinearLayout>
 </RelativeLayout>

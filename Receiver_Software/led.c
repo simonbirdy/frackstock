@@ -42,7 +42,8 @@ void led_initialize(void)
 		TIM1->CCER =  TIM_CCER_CC1NE;
 
 		TIM1->BDTR = TIM_BDTR_MOE;
-		for(i=0;i<10000;i++);
+
+for(i=0;i<10000;i++);
 }
 
 void led_cycle(void){

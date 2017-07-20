@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/colorBackground"
+    android:backgroundTint="@color/colorBackground"
+    android:layout_width="600dp"
+    android:layout_height="match_parent">
+    <com.vos.myapplication.ColorWheel
+        android:id="@+id/dialogColorWheel"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+    <Button
+        android:id="@+id/okButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ok"/>
+</LinearLayout>

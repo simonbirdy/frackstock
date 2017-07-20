@@ -8,5 +8,6 @@
 
 void sc_initialize(void);
 uint8_t sc_waitForCycle(void);
+uint16_t sc_getTimeCounter(void);
 
 #endif

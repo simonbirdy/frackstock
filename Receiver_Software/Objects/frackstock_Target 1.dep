@@ -1,5 +1,5 @@
 Dependencies for Project 'frackstock', Target 'Target 1': (DO NOT MODIFY !)
-F (.\main.c)(0x590A3A3D)(-c --cpu Cortex-M0 -D__EVAL -g -O3 -Otime --apcs=interwork --split_sections-I Y:\OneDrive\ZHAW\Frackstock\repository\frackstock\Receiver_Software\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.4.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F0xx_DFP\1.4.0\Device\Include-D__UVISION_VERSION="516" -D_RTE_ -DSTM32F031-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
+F (.\main.c)(0x591AC289)(-c --cpu Cortex-M0 -D__EVAL -g -O3 -Otime --apcs=interwork --split_sections-I \\Mac\Home\OneDrive\ZHAW\Frackstock\repository\frackstock\Receiver_Software\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.4.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F0xx_DFP\1.4.0\Device\Include-D__UVISION_VERSION="516" -D_RTE_ -DSTM32F031-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
 I (C:\Keil_v5\ARM\PACK\Keil\STM32F0xx_DFP\1.4.0\Device\Include\stm32f0xx.h)(0x548F099E)
 I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.4.0\CMSIS\Include\core_cm0.h)(0x55D56D64)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x55AF4A52)
@@ -8,13 +8,15 @@ I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.4.0\CMSIS\Include\cmsis_armcc.h)(0x55D5BA1A)
 I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.4.0\CMSIS\Include\core_cmFunc.h)(0x55D47368)
 I (C:\Keil_v5\ARM\PACK\Keil\STM32F0xx_DFP\1.4.0\Device\Include\system_stm32f0xx.h)(0x548F099E)
 I (led.h)(0x58BB32BD)
-I (sc.h)(0x58B20CBB)
+I (sc.h)(0x591894E1)
 I (usart.h)(0x58B72EA5)
 I (rfm.h)(0x58B30193)
-I (animation.h)(0x58BB3776)
+I (animation.h)(0x59174BD0)
 I (info.h)(0x58BB3C31)
-I (accel.h)(0x590AC3B5)
-F (.\led.c)(0x5909FF38)(-c --cpu Cortex-M0 -D__EVAL -g -O3 -Otime --apcs=interwork --split_sections-I Y:\OneDrive\ZHAW\Frackstock\repository\frackstock\Receiver_Software\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.4.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F0xx_DFP\1.4.0\Device\Include-D__UVISION_VERSION="516" -D_RTE_ -DSTM32F031-o .\objects\led.o --omf_browse .\objects\led.crf --depend .\objects\led.d)
+I (accel.h)(0x591AC522)
+I (adc.h)(0x591708C3)
+I (control.h)(0x591AAD18)
+F (.\led.c)(0x59100DE2)(-c --cpu Cortex-M0 -D__EVAL -g -O3 -Otime --apcs=interwork --split_sections-I \\Mac\Home\OneDrive\ZHAW\Frackstock\repository\frackstock\Receiver_Software\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.4.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F0xx_DFP\1.4.0\Device\Include-D__UVISION_VERSION="516" -D_RTE_ -DSTM32F031-o .\objects\led.o --omf_browse .\objects\led.crf --depend .\objects\led.d)
 I (led.h)(0x58BB32BD)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x55AF4A52)
 I (C:\Keil_v5\ARM\PACK\Keil\STM32F0xx_DFP\1.4.0\Device\Include\stm32f0xx.h)(0x548F099E)
@@ -23,8 +25,8 @@ I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.4.0\CMSIS\Include\core_cmInstr.h)(0x55D47368)
 I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.4.0\CMSIS\Include\cmsis_armcc.h)(0x55D5BA1A)
 I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.4.0\CMSIS\Include\core_cmFunc.h)(0x55D47368)
 I (C:\Keil_v5\ARM\PACK\Keil\STM32F0xx_DFP\1.4.0\Device\Include\system_stm32f0xx.h)(0x548F099E)
-F (.\sc.c)(0x58B2075B)(-c --cpu Cortex-M0 -D__EVAL -g -O3 -Otime --apcs=interwork --split_sections-I Y:\OneDrive\ZHAW\Frackstock\repository\frackstock\Receiver_Software\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.4.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F0xx_DFP\1.4.0\Device\Include-D__UVISION_VERSION="516" -D_RTE_ -DSTM32F031-o .\objects\sc.o --omf_browse .\objects\sc.crf --depend .\objects\sc.d)
-I (sc.h)(0x58B20CBB)
+F (.\sc.c)(0x591894D9)(-c --cpu Cortex-M0 -D__EVAL -g -O3 -Otime --apcs=interwork --split_sections-I \\Mac\Home\OneDrive\ZHAW\Frackstock\repository\frackstock\Receiver_Software\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.4.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F0xx_DFP\1.4.0\Device\Include-D__UVISION_VERSION="516" -D_RTE_ -DSTM32F031-o .\objects\sc.o --omf_browse .\objects\sc.crf --depend .\objects\sc.d)
+I (sc.h)(0x591894E1)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x55AF4A52)
 I (C:\Keil_v5\ARM\PACK\Keil\STM32F0xx_DFP\1.4.0\Device\Include\stm32f0xx.h)(0x548F099E)
 I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.4.0\CMSIS\Include\core_cm0.h)(0x55D56D64)
@@ -32,7 +34,7 @@ I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.4.0\CMSIS\Include\core_cmInstr.h)(0x55D47368)
 I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.4.0\CMSIS\Include\cmsis_armcc.h)(0x55D5BA1A)
 I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.4.0\CMSIS\Include\core_cmFunc.h)(0x55D47368)
 I (C:\Keil_v5\ARM\PACK\Keil\STM32F0xx_DFP\1.4.0\Device\Include\system_stm32f0xx.h)(0x548F099E)
-F (.\usart.c)(0x5909E202)(-c --cpu Cortex-M0 -D__EVAL -g -O3 -Otime --apcs=interwork --split_sections-I Y:\OneDrive\ZHAW\Frackstock\repository\frackstock\Receiver_Software\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.4.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F0xx_DFP\1.4.0\Device\Include-D__UVISION_VERSION="516" -D_RTE_ -DSTM32F031-o .\objects\usart.o --omf_browse .\objects\usart.crf --depend .\objects\usart.d)
+F (.\usart.c)(0x5909E202)(-c --cpu Cortex-M0 -D__EVAL -g -O3 -Otime --apcs=interwork --split_sections-I \\Mac\Home\OneDrive\ZHAW\Frackstock\repository\frackstock\Receiver_Software\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.4.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F0xx_DFP\1.4.0\Device\Include-D__UVISION_VERSION="516" -D_RTE_ -DSTM32F031-o .\objects\usart.o --omf_browse .\objects\usart.crf --depend .\objects\usart.d)
 I (C:\Keil_v5\ARM\PACK\Keil\STM32F0xx_DFP\1.4.0\Device\Include\stm32f0xx.h)(0x548F099E)
 I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.4.0\CMSIS\Include\core_cm0.h)(0x55D56D64)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x55AF4A52)
@@ -42,9 +44,9 @@ I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.4.0\CMSIS\Include\core_cmFunc.h)(0x55D47368)
 I (C:\Keil_v5\ARM\PACK\Keil\STM32F0xx_DFP\1.4.0\Device\Include\system_stm32f0xx.h)(0x548F099E)
 I (info.h)(0x58BB3C31)
 I (usart.h)(0x58B72EA5)
-I (animation.h)(0x58BB3776)
+I (animation.h)(0x59174BD0)
 I (led.h)(0x58BB32BD)
-F (.\rfm.c)(0x5909F912)(-c --cpu Cortex-M0 -D__EVAL -g -O3 -Otime --apcs=interwork --split_sections-I Y:\OneDrive\ZHAW\Frackstock\repository\frackstock\Receiver_Software\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.4.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F0xx_DFP\1.4.0\Device\Include-D__UVISION_VERSION="516" -D_RTE_ -DSTM32F031-o .\objects\rfm.o --omf_browse .\objects\rfm.crf --depend .\objects\rfm.d)
+F (.\rfm.c)(0x5909F912)(-c --cpu Cortex-M0 -D__EVAL -g -O3 -Otime --apcs=interwork --split_sections-I \\Mac\Home\OneDrive\ZHAW\Frackstock\repository\frackstock\Receiver_Software\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.4.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F0xx_DFP\1.4.0\Device\Include-D__UVISION_VERSION="516" -D_RTE_ -DSTM32F031-o .\objects\rfm.o --omf_browse .\objects\rfm.crf --depend .\objects\rfm.d)
 I (rfm.h)(0x58B30193)
 I (C:\Keil_v5\ARM\PACK\Keil\STM32F0xx_DFP\1.4.0\Device\Include\stm32f0xx.h)(0x548F099E)
 I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.4.0\CMSIS\Include\core_cm0.h)(0x55D56D64)
@@ -53,8 +55,8 @@ I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.4.0\CMSIS\Include\core_cmInstr.h)(0x55D47368)
 I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.4.0\CMSIS\Include\cmsis_armcc.h)(0x55D5BA1A)
 I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.4.0\CMSIS\Include\core_cmFunc.h)(0x55D47368)
 I (C:\Keil_v5\ARM\PACK\Keil\STM32F0xx_DFP\1.4.0\Device\Include\system_stm32f0xx.h)(0x548F099E)
-F (.\animation.c)(0x590AC612)(-c --cpu Cortex-M0 -D__EVAL -g -O3 -Otime --apcs=interwork --split_sections-I Y:\OneDrive\ZHAW\Frackstock\repository\frackstock\Receiver_Software\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.4.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F0xx_DFP\1.4.0\Device\Include-D__UVISION_VERSION="516" -D_RTE_ -DSTM32F031-o .\objects\animation.o --omf_browse .\objects\animation.crf --depend .\objects\animation.d)
-I (animation.h)(0x58BB3776)
+F (.\animation.c)(0x591AC4EC)(-c --cpu Cortex-M0 -D__EVAL -g -O3 -Otime --apcs=interwork --split_sections-I \\Mac\Home\OneDrive\ZHAW\Frackstock\repository\frackstock\Receiver_Software\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.4.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F0xx_DFP\1.4.0\Device\Include-D__UVISION_VERSION="516" -D_RTE_ -DSTM32F031-o .\objects\animation.o --omf_browse .\objects\animation.crf --depend .\objects\animation.d)
+I (animation.h)(0x59174BD0)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x55AF4A52)
 I (led.h)(0x58BB32BD)
 I (C:\Keil_v5\ARM\PACK\Keil\STM32F0xx_DFP\1.4.0\Device\Include\stm32f0xx.h)(0x548F099E)
@@ -63,9 +65,13 @@ I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.4.0\CMSIS\Include\core_cmInstr.h)(0x55D47368)
 I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.4.0\CMSIS\Include\cmsis_armcc.h)(0x55D5BA1A)
 I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.4.0\CMSIS\Include\core_cmFunc.h)(0x55D47368)
 I (C:\Keil_v5\ARM\PACK\Keil\STM32F0xx_DFP\1.4.0\Device\Include\system_stm32f0xx.h)(0x548F099E)
-I (accel.h)(0x590AC3B5)
-F (.\accel.c)(0x590AC577)(-c --cpu Cortex-M0 -D__EVAL -g -O3 -Otime --apcs=interwork --split_sections-I Y:\OneDrive\ZHAW\Frackstock\repository\frackstock\Receiver_Software\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.4.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F0xx_DFP\1.4.0\Device\Include-D__UVISION_VERSION="516" -D_RTE_ -DSTM32F031-o .\objects\accel.o --omf_browse .\objects\accel.crf --depend .\objects\accel.d)
-I (accel.h)(0x590AC3B5)
+I (accel.h)(0x591AC522)
+I (adc.h)(0x591708C3)
+I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x55AF4A52)
+I (sc.h)(0x591894E1)
+I (info.h)(0x58BB3C31)
+F (.\accel.c)(0x591ACDF5)(-c --cpu Cortex-M0 -D__EVAL -g -O3 -Otime --apcs=interwork --split_sections-I \\Mac\Home\OneDrive\ZHAW\Frackstock\repository\frackstock\Receiver_Software\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.4.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F0xx_DFP\1.4.0\Device\Include-D__UVISION_VERSION="516" -D_RTE_ -DSTM32F031-o .\objects\accel.o --omf_browse .\objects\accel.crf --depend .\objects\accel.d)
+I (accel.h)(0x591AC522)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x55AF4A52)
 I (C:\Keil_v5\ARM\PACK\Keil\STM32F0xx_DFP\1.4.0\Device\Include\stm32f0xx.h)(0x548F099E)
 I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.4.0\CMSIS\Include\core_cm0.h)(0x55D56D64)
@@ -73,9 +79,34 @@ I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.4.0\CMSIS\Include\core_cmInstr.h)(0x55D47368)
 I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.4.0\CMSIS\Include\cmsis_armcc.h)(0x55D5BA1A)
 I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.4.0\CMSIS\Include\core_cmFunc.h)(0x55D47368)
 I (C:\Keil_v5\ARM\PACK\Keil\STM32F0xx_DFP\1.4.0\Device\Include\system_stm32f0xx.h)(0x548F099E)
+I (C:\Keil_v5\ARM\ARMCC\include\math.h)(0x55AF4A52)
+F (.\adc.c)(0x591708CF)(-c --cpu Cortex-M0 -D__EVAL -g -O3 -Otime --apcs=interwork --split_sections-I \\Mac\Home\OneDrive\ZHAW\Frackstock\repository\frackstock\Receiver_Software\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.4.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F0xx_DFP\1.4.0\Device\Include-D__UVISION_VERSION="516" -D_RTE_ -DSTM32F031-o .\objects\adc.o --omf_browse .\objects\adc.crf --depend .\objects\adc.d)
+I (adc.h)(0x591708C3)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x55AF4A52)
+I (C:\Keil_v5\ARM\PACK\Keil\STM32F0xx_DFP\1.4.0\Device\Include\stm32f0xx.h)(0x548F099E)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.4.0\CMSIS\Include\core_cm0.h)(0x55D56D64)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.4.0\CMSIS\Include\core_cmInstr.h)(0x55D47368)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.4.0\CMSIS\Include\cmsis_armcc.h)(0x55D5BA1A)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.4.0\CMSIS\Include\core_cmFunc.h)(0x55D47368)
+I (C:\Keil_v5\ARM\PACK\Keil\STM32F0xx_DFP\1.4.0\Device\Include\system_stm32f0xx.h)(0x548F099E)
+F (.\control.c)(0x591ACE1B)(-c --cpu Cortex-M0 -D__EVAL -g -O3 -Otime --apcs=interwork --split_sections-I \\Mac\Home\OneDrive\ZHAW\Frackstock\repository\frackstock\Receiver_Software\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.4.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F0xx_DFP\1.4.0\Device\Include-D__UVISION_VERSION="516" -D_RTE_ -DSTM32F031-o .\objects\control.o --omf_browse .\objects\control.crf --depend .\objects\control.d)
+I (control.h)(0x591AAD18)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x55AF4A52)
+I (animation.h)(0x59174BD0)
+I (led.h)(0x58BB32BD)
+I (info.h)(0x58BB3C31)
+I (C:\Keil_v5\ARM\PACK\Keil\STM32F0xx_DFP\1.4.0\Device\Include\stm32f0xx.h)(0x548F099E)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.4.0\CMSIS\Include\core_cm0.h)(0x55D56D64)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.4.0\CMSIS\Include\core_cmInstr.h)(0x55D47368)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.4.0\CMSIS\Include\cmsis_armcc.h)(0x55D5BA1A)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.4.0\CMSIS\Include\core_cmFunc.h)(0x55D47368)
+I (C:\Keil_v5\ARM\PACK\Keil\STM32F0xx_DFP\1.4.0\Device\Include\system_stm32f0xx.h)(0x548F099E)
+I (accel.h)(0x591AC522)
+I (C:\Keil_v5\ARM\ARMCC\include\math.h)(0x55AF4A52)
+I (adc.h)(0x591708C3)
 F (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.4.0\CMSIS\Lib\ARM\arm_cortexM0l_math.lib)(0x55DEC3CC)()
-F (RTE\Device\STM32F031F6\startup_stm32f031.s)(0x548F099E)(--cpu Cortex-M0 --pd "__EVAL SETA 1" -g --apcs=interwork -I Y:\OneDrive\ZHAW\Frackstock\repository\frackstock\Receiver_Software\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.4.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F0xx_DFP\1.4.0\Device\Include--pd "__UVISION_VERSION SETA 516" --pd "_RTE_ SETA 1" --pd "STM32F031 SETA 1"--list .\listings\startup_stm32f031.lst --xref -o .\objects\startup_stm32f031.o --depend .\objects\startup_stm32f031.d)
-F (RTE\Device\STM32F031F6\system_stm32f0xx.c)(0x548F099E)(-c --cpu Cortex-M0 -D__EVAL -g -O3 -Otime --apcs=interwork --split_sections-I Y:\OneDrive\ZHAW\Frackstock\repository\frackstock\Receiver_Software\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.4.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F0xx_DFP\1.4.0\Device\Include-D__UVISION_VERSION="516" -D_RTE_ -DSTM32F031-o .\objects\system_stm32f0xx.o --omf_browse .\objects\system_stm32f0xx.crf --depend .\objects\system_stm32f0xx.d)
+F (RTE\Device\STM32F031F6\startup_stm32f031.s)(0x5917526A)(--cpu Cortex-M0 --pd "__EVAL SETA 1" -g --apcs=interwork -I \\Mac\Home\OneDrive\ZHAW\Frackstock\repository\frackstock\Receiver_Software\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.4.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F0xx_DFP\1.4.0\Device\Include--pd "__UVISION_VERSION SETA 516" --pd "_RTE_ SETA 1" --pd "STM32F031 SETA 1"--list .\listings\startup_stm32f031.lst --xref -o .\objects\startup_stm32f031.o --depend .\objects\startup_stm32f031.d)
+F (RTE\Device\STM32F031F6\system_stm32f0xx.c)(0x59100EA5)(-c --cpu Cortex-M0 -D__EVAL -g -O3 -Otime --apcs=interwork --split_sections-I \\Mac\Home\OneDrive\ZHAW\Frackstock\repository\frackstock\Receiver_Software\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.4.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F0xx_DFP\1.4.0\Device\Include-D__UVISION_VERSION="516" -D_RTE_ -DSTM32F031-o .\objects\system_stm32f0xx.o --omf_browse .\objects\system_stm32f0xx.crf --depend .\objects\system_stm32f0xx.d)
 I (C:\Keil_v5\ARM\PACK\Keil\STM32F0xx_DFP\1.4.0\Device\Include\stm32f0xx.h)(0x548F099E)
 I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.4.0\CMSIS\Include\core_cm0.h)(0x55D56D64)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x55AF4A52)

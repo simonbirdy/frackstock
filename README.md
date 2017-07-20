@@ -11,4 +11,4 @@ Videos showing the walking stick in Action:
 
 General Setup (Remote Control):
 
-Android Device -> ESP2866 & RFM117 -> walking stick
+Android Device (WLAN) -> Sender (ESP2866 & RFM117) -> walking stick (RFM217 & STM32f0)

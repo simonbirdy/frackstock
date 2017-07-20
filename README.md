@@ -11,8 +11,4 @@ Videos showing the walking stick in Action:
 
 General Setup (Remote Control):
 
----------------------             -------------------------             ---------------------
-|                   |    WLAN     |                       |  968 MHz    |                   |
-|  Android Device   |    ->       |   ESP2866 &  RFM117   |     ->      |   Walking stick   |
-|(Android Software) |             |   (Sender Software)   |             |(Receiver Software)|
----------------------             -------------------------             ---------------------
+Android Device -> ESP2866 & RFM117 -> walking stick
